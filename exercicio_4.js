@@ -13,22 +13,26 @@
     - Entre 30 e 40 Obeso;
     - Acima de 40 Obsesidade Grave;
 */
+function calcimc(peso, altura) {
+  return peso / (altura * altura);
+}
+function parametros(imc) {
+  if (imc < 18.5) {
+    return `Abaixo do peso com IMC ${imc}`;
+  } else if (imc >= 18.5 && imc < 25) {
+    return `Peso normal com IMC ${imc}`;
+  } else if (imc >= 25 && imc < 30) {
+    return `Acima do peso com IMC ${imc}`;
+  } else if (imc >= 30 && imc < 40) {
+    return `Obeso com IMC ${imc}`;
+  } else if (imc > 40) {
+    return `Obesidade Grave com IMC ${imc}`;
+  }
+}
+function main() {
+  const peso = 100;
+  const altura = 1.8;
+  const imc = calcimc(peso, altura);
 
-const peso = 100;
-const altura = 1.8;
-
-const imc = peso / (altura * altura);
-
-if (imc < 18.5) {
-  console.log(`Abaixo do peso com IMC ${imc}`);
-} else if (imc >= 18.5) {
-  console.log(`Peso normal com IMC ${imc}`);
-} else if (imc >= 25) {
-  console.log(`Acima do peso com IMC ${imc}`);
-} else if (imc >= 30) {
-  console.log(`Obeso com IMC ${imc}`);
-} else if (imc > 40) {
-  console.log(`Obesidade Grave com IMC ${imc}`);
-} else {
-  console.log("Você não existe");
+  console.log(parametros(imc));
 }
