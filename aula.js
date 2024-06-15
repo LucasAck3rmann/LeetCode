@@ -1,12 +1,13 @@
-function soma(a, b) {
-  return a + b;
+class cachorro {
+  nome;
+  raca;
+
+  constructor(nome, raca) {
+    this.nome = nome;
+    this.raca = raca;
+  }
+
+  descreverCachorro() {
+    console.log(`O cachorro ${this.nome} é da raça ${this.raca}`);
+  }
 }
-
-function subtracao(a, b) {
-  const resultado = a - b;
-  return resultado;
-}
-
-console.log(subtracao(10, 10));
-
-console.log(soma(10, 20) * soma(10, 20));
