@@ -11,3 +11,17 @@ Exemplo:
 
     Saída:
         Números Pares: 10, 12*/
+
+const quantidade = 5;
+const numeros = [1, 3, 9, 10, 12];
+const pares = [];
+
+for (let i = 0; i < quantidade; i++) {
+  if (numeros[i] % 2 === 0) {
+    pares.push(numeros[i]);
+  }
+}
+
+console.log(`Números Pares: ${pares.join(", ")}`);
+
+// Saída esperada: Números Pares: 10, 12
