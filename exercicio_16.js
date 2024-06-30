@@ -26,8 +26,6 @@ console.log(`Números Pares: ${pares.join(", ")}`);
 
 // Saída esperada: Números Pares: 10, 12
 
-// Outra solução
-
 const quantidade = 5;
 const numeros = [1, 3, 9, 10, 12];
 const pares = numeros.filter((num) => num % 2 === 0);
