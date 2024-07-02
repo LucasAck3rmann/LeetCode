@@ -1,7 +1,3 @@
-//Desafios JavaScript na DIO têm funções "gets" e "print" acessíveis globalmente:
-//- "gets" : lê UMA linha com dado(s) de entrada (inputs) do usuário;
-//- "print": imprime um texto de saída (output), pulando linha.
-
 let media = gets(5.5, 8, 2);
 
 if (media < 5) {
@@ -12,4 +8,22 @@ if (media < 5) {
   print("APR");
 }
 
-// TODO: Criar demais condições para a resolução deste desafio.
+function gets(n1, n2, n3) {
+  return (n1 + n2 + n3) / 3;
+}
+
+function print(result) {
+  console.log(result);
+}
+
+// Entrada: 5.5, 8, 2
+
+// Saída: REC
+
+// Entrada: 7, 7, 7
+
+// Saída: APR
+
+// Entrada: 2, 2, 2
+
+// Saída: REP
